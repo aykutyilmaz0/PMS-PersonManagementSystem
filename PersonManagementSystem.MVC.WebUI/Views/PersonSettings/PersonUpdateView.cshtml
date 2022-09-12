@@ -1,0 +1,51 @@
+﻿@model PersonManagementSystem.MVC.WebUI.Models.PersonSettingsViewModel
+@using (Html.BeginForm("PersonUpdateViewUpdate", "PersonSettings", FormMethod.Post))
+{
+    <div class="col-md-12">
+        @Html.HiddenFor(m => m.Person.PersonId)
+        <div class="form-group">
+            <label for="username" class="col-4 col-form-label">User Name</label>
+            @Html.TextBoxFor(m => m.Person.Username, new { @class = "form-control", @placeholder = "Username" ,@required  = "required" })
+        </div>
+        <div class="form-group">
+            <label for="username" class="col-8 col-form-label">First Name</label>
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.Person.FirstName, new { @class = "form-control", @placeholder = "First Name",@required  = "required" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username" class="col-8 col-form-label">Last Name</label>
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.Person.LastName, new { @class = "form-control", @placeholder = "LastName",@required  = "required" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username" class="col-8 col-form-label">E mail</label>
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.Person.Email, new { @class = "form-control", @placeholder = "Email adress",@required  = "required" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username" class="col-8 col-form-label">Password</label>
+            <div class="col-12">
+                @Html.TextBoxFor(m => m.Person.Password, new { @class = "form-control", @placeholder = "Password", @type = "password",@required  = "required" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username" class="col-8 col-form-label">Person Rol</label>
+            <div class="col-12">
+                @Html.DropDownListFor(model => model.Person.RoleId, new SelectList(Model.Roles, "RoleId", "RoleName"), new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username" class="col-8 col-form-label">Person Departments</label>
+            <div class="col-12">
+                @Html.DropDownListFor(model => model.Person.DepartmentId, new SelectList(Model.Departmens, "DepartmentId", "DepartmentName"), new { @class = "form-control" })
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+}

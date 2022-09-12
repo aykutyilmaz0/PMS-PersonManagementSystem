@@ -1,0 +1,94 @@
+﻿@model List<PersonManagementSystem.Entities.Department>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@if (TempData["SuccesAlert"] != null)
+{
+    <script type="text/javascript">
+    Swal.fire(
+         'Successful',
+         '@TempData["SuccesAlert"]',
+         'success'
+)
+    </script>
+}
+<div class="alert alert-success" style="text-align:center">
+    <br />
+
+    @using (Html.BeginForm("AddDepartment", "PersonDepartment", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group row">
+            <label class="col-md-4  text-md-right">Department :</label>
+            <div class="col-md-6">
+                <input type="hidden" name="DepartmentId" id="DepartmentId" />
+                <input type="text" name="DepartmentName" id="DepartmentName" class="form-control" required />
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                <br />
+                <input type="submit" class="btn btn-primary" value="Add Department" />
+            </div>
+        </div>
+
+    }
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Department ID</th>
+                <th scope="col">Department Name</th>
+                <th scope="col">Delete Role</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.DepartmentId</td>
+                    <td>@item.DepartmentName</td>
+                    <td><a href="~/PersonDepartment/DeleteDepartment/?id=@item.DepartmentId" id="submitroleBtn" onclick="return confirm(this)" class="btn btn-danger">Delete </a> </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<script>
+    function confirm(submitroleBtn) {
+        if (submitroleBtn.dataset.confirmed) {
+            // The action was already confirmed by the user, proceed with server event
+            submitroleBtn.dataset.confirmed = false;
+            return true;
+        }
+        else {
+            event.preventDefault();
+            Swal.fire({
+                title: 'Are you sure ?',
+                text: "Person department will be deleted",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirm'
+            }).then((result) => {
+                if (result.value) {
+                    submitroleBtn.dataset.confirmed = true;
+                    // Trigger button click programmatically
+                    submitroleBtn.click();
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Deletion successful',
+                        showConfirmButton: false,
+                        timer: 4000
+                    })
+                }
+            })
+        }
+    }
+</script>
+

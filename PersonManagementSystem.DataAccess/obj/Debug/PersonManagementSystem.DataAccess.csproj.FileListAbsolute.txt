@@ -1,0 +1,15 @@
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\PersonManagementSystem.DataAccess.dll.config
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\PersonManagementSystem.DataAccess.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\PersonManagementSystem.DataAccess.pdb
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\PersonManagementSystem.Entities.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\PersonManagementSystem.Entities.pdb
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\PersonManagementSystem.Entities.dll.config
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\obj\Debug\PersonManagementSystem.DataAccess.csprojAssemblyReference.cache
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\obj\Debug\PersonManagementSystem.DataAccess.csproj.CopyComplete
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\obj\Debug\PersonManagementSystem.DataAccess.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\obj\Debug\PersonManagementSystem.DataAccess.pdb
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.DataAccess\obj\Debug\PersonManagementSystem.DataAccess.csproj.CoreCompileInputs.cache

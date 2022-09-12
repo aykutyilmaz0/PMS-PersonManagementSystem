@@ -1,0 +1,16 @@
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\PersonManagementSystem.Entities.dll.config
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\PersonManagementSystem.Entities.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\PersonManagementSystem.Entities.pdb
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\EntityFramework.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\EntityFramework.xml
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\obj\Debug\PersonManagementSystem.Entities.csprojAssemblyReference.cache
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\obj\Debug\PersonManagementSystem.Entities.csproj.CopyComplete
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\obj\Debug\PersonManagementSystem.Entities.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\obj\Debug\PersonManagementSystem.Entities.pdb
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\FluentValidation.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\FluentValidation.ValidatorAttribute.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\bin\Debug\FluentValidation.xml
+C:\Users\ass\Desktop\Professional projelerim\PersonManagementSystem\PersonManagementSystem.Entities\obj\Debug\PersonManagementSystem.Entities.csproj.CoreCompileInputs.cache

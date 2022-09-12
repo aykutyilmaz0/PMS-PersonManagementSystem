@@ -1,0 +1,74 @@
+﻿@model PersonManagementSystem.Entities.Persons
+@{
+    ViewBag.Title = "MyProfile";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@Html.AntiForgeryToken()
+@if (ViewBag.SuccessAlert != null)
+{
+    <div style="text-align:center" class="alert alert-success">@ViewBag.SuccessAlert</div>
+}
+@using (Html.BeginForm())
+{
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="text-align:center">Your Profile</h4>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" style="margin-left:0px;margin-right:0px;">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group row">
+                            <label for="username" class="col-8 col-form-label">User Name</label>
+                            <div class="col-12">
+                                @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @placeholder = "Username" })
+                                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-4 col-form-label">First Name</label>
+                            <div class="col-8">
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @placeholder = "First Name" })
+                                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-4 col-form-label">Last Name</label>
+                            <div class="col-8">
+                                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @placeholder = "Last Name" })
+                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="text" class="col-4 col-form-label">E Mail Adress</label>
+                            <div class="col-8">
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "E mail" })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-4 col-form-label">Password</label>
+                            <div class="col-8">
+                                @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @placeholder = "Password", @type = "password" })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        @Html.HiddenFor(m => m.DepartmentId)
+                        @Html.HiddenFor(m => m.RoleId)
+                        @Html.HiddenFor(m => m.PersonId)
+                        <div class="form-group row">
+                            <div class="offset-4 col-8">
+                                <button name="submit" type="submit" class="btn btn-primary">Update My Profile</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+}
